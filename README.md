@@ -1,16 +1,24 @@
-# Synced Local Prayer Calendar
+# Locally Synced Prayer Calendar
 
 ## Introduction
 
 Muslims pray five times a day and the exact prayer times change daily based on location and astronomical calculations. Many people regularly check their local masjid’s website or timetable to stay updated. This project aims to simplify that daily routine by automatically collecting prayer times from local mosques and publishing them to a public Google Calendar. Anyone can subscribe to the calendar and instantly receive accurate, daily prayer times across all their devices.
 
-## Supported Mosques
+## Features
 
-| 🕌 Mosque                                                 | 🗺️ Location  | 📅 View Calendar                       | ➕ Add to Google Calendar      | ➕ Add to Other Calendar      |
-| --------------------------------------------------------- | ------------- | --------------------------------- | --------------------- | -------------------------------------------- |
-| <img src="https://www.leedsgrandmosque.com/favicon.ico" width="15"/> [Leeds Grand Mosque](https://www.leedsgrandmosque.com/)   | Leeds         | [View](https://calendar.google.com/calendar/embed?src=80110e3124bdedfb7a61d57c33bfd69a3a2ee799c89ff186a3a5ee5850edf0bc%40group.calendar.google.com&ctz=Europe%2FLondon) | [Subscribe](https://calendar.google.com/calendar/u/0/r?cid=80110e3124bdedfb7a61d57c33bfd69a3a2ee799c89ff186a3a5ee5850edf0bc@group.calendar.google.com) | [Download .ics](https://calendar.google.com/calendar/ical/80110e3124bdedfb7a61d57c33bfd69a3a2ee799c89ff186a3a5ee5850edf0bc%40group.calendar.google.com/public/basic.ics) |
-| <img src="https://mwhs.org.uk/favicon.ico" width="15"/> [Muslim Welfare House Sheffield](https://www.mwhs.org.uk/)| Sheffield     | [View](https://calendar.google.com/calendar/embed?src=2c41d01d3eba036595b9f9ffbc4d4df06b13c37c4da73962a06a0c3e920bb826@group.calendar.google.com) | [Subscribe](https://calendar.google.com/calendar/u/0/r?cid=2c41d01d3eba036595b9f9ffbc4d4df06b13c37c4da73962a06a0c3e920bb826@group.calendar.google.com) | [Download .ics](https://calendar.google.com/calendar/ical/2c41d01d3eba036595b9f9ffbc4d4df06b13c37c4da73962a06a0c3e920bb826@group.calendar.google.com/public/basic.ics) |
-| <img src="https://www.manchesterisoc.com//favicon.ico" width="15"/> [Mcdougall Prayer Hall](https://www.manchesterisoc.com/) | Manchester | [View](https://calendar.google.com/calendar/embed?src=c5bffac36dc5ee21ac0458788d7c82679f39a9d720fae79059c8ea1e496145fb@group.calendar.google.com) | [Subscribe](https://calendar.google.com/calendar/u/0/r?cid=c5bffac36dc5ee21ac0458788d7c82679f39a9d720fae79059c8ea1e496145fb@group.calendar.google.com) | [Download .ics](https://calendar.google.com/calendar/ical/c5bffac36dc5ee21ac0458788d7c82679f39a9d720fae79059c8ea1e496145fb@group.calendar.google.com/public/basic.ics) |
+🕒 Daily Synced Prayer Times – Automatically fetches updated prayer times from supported mosque websites and publishes them to their Google Calendar every day.
+
+📅 Works With Any Calendar App – You can subscribe to these calendars with apps other than Google Calendar by adding the ICS file.
+
+🔔 Prayer Notifications – Receive notifications on your devices when it’s time to pray.
+
+## Subscribe to Your Mosque Prayer Calendar
+
+| 🕌 Mosque | ➕ Add to Google Calendar | 🗺️ Location  | 📅 View Calendar |  ➕ Add to Other Calendar |
+| ---------- | -------------------------- | ------------- | ---------------- | -------------------------- |
+| <img src="https://www.leedsgrandmosque.com/favicon.ico" width="15"/> [Leeds Grand Mosque](https://www.leedsgrandmosque.com/) | [Subscribe](https://calendar.google.com/calendar/u/0/r?cid=80110e3124bdedfb7a61d57c33bfd69a3a2ee799c89ff186a3a5ee5850edf0bc@group.calendar.google.com) | Leeds | [View](https://calendar.google.com/calendar/embed?src=80110e3124bdedfb7a61d57c33bfd69a3a2ee799c89ff186a3a5ee5850edf0bc%40group.calendar.google.com&ctz=Europe%2FLondon) | [Download .ics](https://calendar.google.com/calendar/ical/80110e3124bdedfb7a61d57c33bfd69a3a2ee799c89ff186a3a5ee5850edf0bc%40group.calendar.google.com/public/basic.ics) |
+| <img src="https://mwhs.org.uk/favicon.ico" width="15"/> [Muslim Welfare House Sheffield](https://www.mwhs.org.uk/)| [Subscribe](https://calendar.google.com/calendar/u/0/r?cid=2c41d01d3eba036595b9f9ffbc4d4df06b13c37c4da73962a06a0c3e920bb826@group.calendar.google.com) | Sheffield | [View](https://calendar.google.com/calendar/embed?src=2c41d01d3eba036595b9f9ffbc4d4df06b13c37c4da73962a06a0c3e920bb826@group.calendar.google.com) | [Download .ics](https://calendar.google.com/calendar/ical/2c41d01d3eba036595b9f9ffbc4d4df06b13c37c4da73962a06a0c3e920bb826@group.calendar.google.com/public/basic.ics) |
+| <img src="https://www.manchesterisoc.com//favicon.ico" width="15"/> [Mcdougall Prayer Hall](https://www.manchesterisoc.com/) | [Subscribe](https://calendar.google.com/calendar/u/0/r?cid=c5bffac36dc5ee21ac0458788d7c82679f39a9d720fae79059c8ea1e496145fb@group.calendar.google.com) | Manchester | [View](https://calendar.google.com/calendar/embed?src=c5bffac36dc5ee21ac0458788d7c82679f39a9d720fae79059c8ea1e496145fb@group.calendar.google.com) | [Download .ics](https://calendar.google.com/calendar/ical/c5bffac36dc5ee21ac0458788d7c82679f39a9d720fae79059c8ea1e496145fb@group.calendar.google.com/public/basic.ics) |
 
 ## Architecture Diagram
 
