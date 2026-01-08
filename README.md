@@ -6,11 +6,11 @@ Muslims pray five times a day and the exact prayer times change daily based on l
 
 ## Features
 
-🕒 Daily Synced Prayer Times – Automatically fetches updated prayer times from supported mosque websites and publishes them to their Google Calendar every day.
+🕒 **Daily Synced Prayer Times** – Automatically fetches updated prayer times from supported mosque websites and publishes them to their Google Calendar every day.
 
-📅 Works With Any Calendar App – You can subscribe to these calendars with apps other than Google Calendar by adding the ICS file.
+📅 **Works With Any Calendar App** – You can subscribe to these calendars with apps other than Google Calendar by adding the ICS file.
 
-🔔 Prayer Notifications – Receive notifications on your devices when it’s time to pray.
+🔔 **Prayer Notifications** – Receive notifications on your devices when it’s time to pray.
 
 ## Subscribe to Your Mosque Prayer Calendar
 
