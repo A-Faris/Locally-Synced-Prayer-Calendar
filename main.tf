@@ -41,6 +41,7 @@ variable "secret_name" {
 variable "repo" {
   type        = string
   description = "Artifact Registry repo name"
+  default     = "prayer-repo"
 }
 
 variable "image_name" {
@@ -56,6 +57,7 @@ variable "service_name" {
 variable "schedule" {
   type        = string
   description = "Cron schedule for Cloud Scheduler"
+  default     = "0 0 * * *"
 }
 
 variable "timezone" {
