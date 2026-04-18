@@ -57,7 +57,7 @@ variable "service_name" {
 variable "schedule" {
   type        = string
   description = "Cron schedule for Cloud Scheduler"
-  default     = "1 2 * * *"
+  default     = "0 0 * * *"
 }
 
 variable "timezone" {
