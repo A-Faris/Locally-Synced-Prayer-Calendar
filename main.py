@@ -3,8 +3,6 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, date
 from abc import ABC, abstractmethod
-from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
 
 import google.auth
 from google.cloud import secretmanager
@@ -32,32 +30,20 @@ def get_service_account_credentials() -> service_account.Credentials:
 
 
 # ----------------------------
-# PrayerTimesScraper with headers & retries
+# PrayerTimesScraper
 # ----------------------------
 class PrayerTimesScraper:
     def __init__(self, timeout: int = 10):
         self.session = requests.Session()
         self.timeout = timeout
 
-        # Retry failed requests
-        retries = Retry(
-            total=3,
-            backoff_factor=1,
-            status_forcelist=[429, 500, 502, 503, 504]
-        )
-        adapter = HTTPAdapter(max_retries=retries)
-        self.session.mount("http://", adapter)
-        self.session.mount("https://", adapter)
-
     def get(self, url: str) -> str:
         headers = {
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/117.0.0.0 Safari/537.36"
-            )
+            "User-Agent": "Mozilla/5.0"
         }
-        return self.session.get(url, timeout=self.timeout, headers=headers).text
+        response = self.session.get(url, timeout=self.timeout, headers=headers)
+        response.raise_for_status()
+        return response.text
 
     def convert_to_dt(self, time_str: str, format: str = "%H:%M") -> str:
         return datetime.combine(
